@@ -1,4 +1,8 @@
 # !/bin/sh
+## @copyright 2019 Arnoud Vangrunderbeek
+## Author : Arnoud Vangrunderbeek
+## Description :
+## Simple script to send AT commands
 
 PROGNAME=$(basename $0)
 SLOG=logger.log
