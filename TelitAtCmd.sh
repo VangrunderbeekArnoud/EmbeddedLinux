@@ -72,7 +72,7 @@ stty -F "$MODEM" 9600 -echo igncr -icanon onlcr ixon min 0 time 5
 exec 5<>"$MODEM"
 
 # send cmd to modem and read response
-get_response "AT+CSQ" || error_exit "Bad response from telit modem"
+get_response $2 || error_exit "Bad response from telit modem"
 
 # delete tmp file
 rm -f $TMP || error_exit "Unable to remove '${TMP}'"
